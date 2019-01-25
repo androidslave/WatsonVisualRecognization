@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signature Recognizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h2>Watson Visual Recognition Demo</h2>
+    </div>
+    <h2>Signature Recognizer</h2>
+    <!-- <div class="bg">
+        <form id="frmUploader" enctype="multipart/form-data" action="/result" method="post" autocomplete="off">
+            <input type="file" name="imgUploader" single required/>
+            <input type="submit" name="submit" id="btnSubmit" value="Upload" /> </form>
+        </form>
+
+    </div> -->
+    <div>
+        <canvas id="canvas" class="canvas" width=900 height=300 style="background:yellow;"></canvas>
+    </div>
+    <div>
+        <form method="post" action="/result">
+            <input type="hidden" id="data_img" name="data_img">
+            <button id="save" name="save">save</button>
+            <button id="clear">Clear</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="/scripts/sayHi.js"></script>
+
+</body>
+
+</html>
